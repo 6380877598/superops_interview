@@ -47,3 +47,27 @@
 |------|-------------|
 | <a name="output_alb_dns_name"></a> [alb\_dns\_name](#output\_alb\_dns\_name) | n/a |
 | <a name="output_ec2_public_ips"></a> [ec2\_public\_ips](#output\_ec2\_public\_ips) | n/a |
+
+
+## SuperOps Terraform Infrastructure
+
+This Terraform project deploys the following on AWS:
+
+- VPC with optional NAT gateways
+- Security Groups for ALB and EC2
+- Application Load Balancer (ALB)
+- Two EC2 instances
+- ALB target group attachments
+
+---
+
+## Usage / Run Commands
+
+| USES | COMMAND |
+|------|---------|
+| <a name="command_initialize_terraform"></a> [Initialize Terraform](#command_initialize_terraform) | `terraform init` |
+| <a name="command_validate_terraform"></a> [Validate Terraform](#command_validate_terraform) | `terraform validate` |
+| <a name="command_plan_infrastructure"></a> [Plan Infrastructure](#command_plan_infrastructure) | `terraform plan --var-file="dev.tfvars"` |
+| <a name="command_apply_infrastructure"></a> [Apply Infrastructure](#command_apply_infrastructure) | `terraform apply --var-file="dev.tfvars"` |
+
+

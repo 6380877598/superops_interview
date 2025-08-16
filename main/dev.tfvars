@@ -1,0 +1,8 @@
+project_name       = "superops-dev"
+cidr_block_for_VPC = "10.0.0.0/16"
+nat_creation       = "yes"
+environment        = "dev"
+instance_type      = "t3.micro"
+key_name           = "dev-key"
+az1                = "us-east-1a"
+az2                = "us-east-1b"

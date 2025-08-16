@@ -1,0 +1,8 @@
+project_name       = "myapp-stage"
+cidr_block_for_VPC = "10.1.0.0/16"
+nat_creation       = "yes"
+environment        = "stage"
+instance_type      = "t3.micro"
+key_name           = "stage-key"
+az1                = "us-east-1a"
+az2                = "us-east-1b"

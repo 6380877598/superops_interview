@@ -42,7 +42,6 @@ resource "aws_internet_gateway" "IGW" {
 
 resource "aws_eip" "elastic_ip" {
   count = "${var.nat_creation == "yes" ? 1: 0 }"
-  vpc = true
   tags = {
   Name = "${var.project_name}-NAT_EIP"
   vpc_id = "${aws_vpc.my_vpc.id}"
